@@ -68,7 +68,7 @@ This project uses the Cloudinary AI API to change the background of an uploaded 
 3. **Set up your Cloudinary credentials:**
     Copy `config_template.py` to `config.py` and fill in your Cloudinary credentials.
    ```bash
-   cp config_example.py config.py
+   cp config_template.py config.py
 
 ## Usage
 1. Run the Streamlit app:
