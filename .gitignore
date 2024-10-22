@@ -1,0 +1,23 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Streamlit local configuration
+/.streamlit/
+
+# Environment variables file (if you have one)
+.env
+
+# Configuration file with sensitive information
+config.py
+
+# Temporary files
+*.log
+*.tmp
