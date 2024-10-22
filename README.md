@@ -26,7 +26,7 @@ This project uses the Cloudinary AI API to change the background of an uploaded 
 ## How to Run Locally
 
 ### Prerequisites
-- Python 3.x installed on your system.
+- Python installed on your system.
 - A Cloudinary account (for API credentials).
 
 ### Setup Instructions
@@ -39,8 +39,25 @@ This project uses the Cloudinary AI API to change the background of an uploaded 
 2. **Install the required dependencies:**
    ```bash
    pip install -r requirements.txt
+   
 3. **Set up your Cloudinary credentials:**
-    Copy the config_example.py file
+    Copy `config_template.py` to `config.py` and fill in your Cloudinary credentials.
    ```bash
    cp config_example.py config.py
-   
+
+## Usage
+1. Run the Streamlit app:
+   ```bash
+   streamlit run app.py
+2. Open your web browser and go to `http://localhost:8501` to access the app.
+3. Upload an image and enter a prompt describing the background you'd like. Click "Submit" to transform the image. You can then download the transformed image.
+
+## Contributing
+Contributions are welcome! If you have suggestions or improvements, please feel free to:
+- Open an issue to discuss any changes you'd like to see.
+- Submit a pull request with your proposed changes.
+
+Please make sure to follow the project's coding style and include tests for any new features.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
