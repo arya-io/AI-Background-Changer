@@ -19,14 +19,27 @@ This project uses the Cloudinary AI API to change the background of an uploaded 
 ## Image Showcase
 
 ### Original Image
-![Original Image](OriginalImage1.jpg)
+<img src="OriginalImage1.jpg" alt="Original Image" width="400"/>
 
 ### Transformed Images
-1. ![Transformed Image 1](transformed_image.jpg)
-2. ![Transformed Image 2](transformed_image(1).jpg)
-3. ![Transformed Image 3](transformed_image(2).jpg)
-4. ![Transformed Image 4](transformed_image(3).jpg)
-
+<div style="display: flex; justify-content: space-around;">
+    <div style="text-align: center;">
+        <h4>Transformed Image 1</h4>
+        <img src="transformed_image.jpg" alt="Transformed Image 1" width="150"/>
+    </div>
+    <div style="text-align: center;">
+        <h4>Transformed Image 2</h4>
+        <img src="transformed_image(1).jpg" alt="Transformed Image 2" width="150"/>
+    </div>
+    <div style="text-align: center;">
+        <h4>Transformed Image 3</h4>
+        <img src="transformed_image(2).jpg" alt="Transformed Image 3" width="150"/>
+    </div>
+    <div style="text-align: center;">
+        <h4>Transformed Image 4</h4>
+        <img src="transformed_image(3).jpg" alt="Transformed Image 4" width="150"/>
+    </div>
+</div>
 
 ## Technologies Used
 - **Python**: Backend logic.
