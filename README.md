@@ -16,6 +16,18 @@ This project uses the Cloudinary AI API to change the background of an uploaded 
 4. Cloudinary processes the image and replaces the background based on the prompt.
 5. The user can view and download the transformed image.
 
+## Image Showcase
+
+### Original Image
+![Original Image](OriginalImage1.jpg)
+
+### Transformed Images
+1. ![Transformed Image 1](transformed_image.jpg)
+2. ![Transformed Image 2](transformed_image(1).jpg)
+3. ![Transformed Image 3](transformed_image(2).jpg)
+4. ![Transformed Image 4](transformed_image(3).jpg)
+
+
 ## Technologies Used
 - **Python**: Backend logic.
 - **Streamlit**: Frontend for user interaction.
