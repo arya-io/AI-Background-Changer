@@ -11,9 +11,9 @@ import requests
 
 # Configure Cloudinary with your cloud name, API key, and API secret
 cloudinary.config( 
-    cloud_name = st.secrets[cloud_name], 
-    api_key = st.secrets[api_key], 
-    api_secret = st.secrets[api_secret], 
+    cloud_name = st.secrets[CLOUD_NAME], 
+    api_key = st.secrets[API_KEY], 
+    api_secret = st.secrets[API_SECRET], 
     secure=True  # Ensures that the connection to Cloudinary is secure (https)
 )
 
