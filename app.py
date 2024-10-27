@@ -110,17 +110,18 @@ if uploaded_image is not None:
 # Footer with social media links and credit
 st.markdown("""
     <footer>
-    <div style="text-align: center; padding: 15px; font-size: 0.9em; color: #888; background-color: #f9f9f9;">
+    <div style="text-align: center; padding: 15px; font-size: 0.9em; color: #888;">
         <p>Made with 💻 by <a href='https://linkedin.com/in/aryaai' style="color: #FF5722; text-decoration: none;">Arya</a></p>
         <div style="padding-top: 5px;">
             <a href='https://linkedin.com/in/aryaai' style="margin-right: 10px;" target='_blank'>
-                <img src='https://img.icons8.com/ios-filled/50/FF5722/linkedin.png' width='24px' alt='LinkedIn' />
+                <img src='https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png' width='24px' alt='LinkedIn' />
             </a>
             <a href='https://github.com/arya-io' target='_blank'>
-                <img src='https://img.icons8.com/ios-filled/50/FF5722/github.png' width='24px' alt='GitHub' />
+                <img src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' width='24px' alt='GitHub' />
             </a>
         </div>
     </div>
     </footer>
 """, unsafe_allow_html=True)
+
 
