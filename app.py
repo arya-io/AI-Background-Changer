@@ -22,15 +22,13 @@ st.markdown("<h1 style='text-align: center; color: #4CAF50;'>🔮 Background Cha
 st.markdown("<h3 style='text-align: center; color: #FF5722;'>🚀 AI-Powered Image Transformation ⚡</h3>", unsafe_allow_html=True)
 
 # File uploader widget to allow the user to upload an image (jpg, jpeg, png)
-st.markdown("<p style='text-align: center; color: #42a5f5;'>Upload an image to start the magic 🎨</p>", unsafe_allow_html=True)
-uploaded_image = st.file_uploader("", type=["jpg", "jpeg", "png"])
+with st.markdown("<p style='text-align: center; color: #42a5f5;'>Upload an image to start the magic 🎨</p>", unsafe_allow_html=True):
+    uploaded_image = st.file_uploader("", type=["jpg", "jpeg", "png"])
+    st.success('Photo uploaded successfully!')
 # uploaded_image = st.camera_input("")
 # uploaded_image = st.file_uploader("", type=["jpg", "jpeg", "png"]) or st.camera_input("")
-progress_bar = st.progress(0)
-for perc_completed in range(100):
-    progress_bar.progress(perc_completed + 1)
 
-st.success('Photo uploaded successfully!')
+
 
 # If an image is uploaded, show it along with the prompt input
 if uploaded_image is not None:
