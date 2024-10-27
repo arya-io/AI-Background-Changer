@@ -9,6 +9,11 @@ import uuid # uuid: Generates unique identifiers (used to name uploaded images u
 from io import BytesIO # BytesIO: Allows handling file data in memory (used to process uploaded images)
 import requests
 
+st.set_page_config(
+    page_title = 'AI Background Changer'
+    page_icon = '⚡',
+)
+
 # Configure Cloudinary with your cloud name, API key, and API secret
 cloudinary.config( 
     cloud_name = st.secrets["CLOUD_NAME"], 
