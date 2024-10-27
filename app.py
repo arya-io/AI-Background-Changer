@@ -22,17 +22,15 @@ st.markdown("<h1 style='text-align: center; color: #4CAF50;'>🔮 Background Cha
 st.markdown("<h3 style='text-align: center; color: #FF5722;'>🚀 AI-Powered Image Transformation ⚡</h3>", unsafe_allow_html=True)
 
 # File uploader widget to allow the user to upload an image (jpg, jpeg, png)
-with st.markdown("<p style='text-align: center; color: #42a5f5;'>Upload an image to start the magic 🎨</p>", unsafe_allow_html=True):
-    uploaded_image = st.file_uploader("", type=["jpg", "jpeg", "png"])
-    st.success('Photo uploaded successfully!')
+st.markdown("<p style='text-align: center; color: #42a5f5;'>Upload an image to start the magic 🎨</p>", unsafe_allow_html=True):
+uploaded_image = st.file_uploader("", type=["jpg", "jpeg", "png"])
 # uploaded_image = st.camera_input("")
 # uploaded_image = st.file_uploader("", type=["jpg", "jpeg", "png"]) or st.camera_input("")
-
-
 
 # If an image is uploaded, show it along with the prompt input
 if uploaded_image is not None:
     # Open the uploaded image using PIL and display it in the app
+    st.success('Photo uploaded successfully!')
     image = Image.open(uploaded_image)
     st.image(image, use_column_width=True)
     st.markdown("<p style='text-align: center; color: white;'>Original Image</p>", unsafe_allow_html=True)
