@@ -26,6 +26,11 @@ st.markdown("<p style='text-align: center; color: #42a5f5;'>Upload an image to s
 uploaded_image = st.file_uploader("", type=["jpg", "jpeg", "png"])
 # uploaded_image = st.camera_input("")
 # uploaded_image = st.file_uploader("", type=["jpg", "jpeg", "png"]) or st.camera_input("")
+progress_bar = st.progress(0)
+for perc_completed in range(100):
+    progress_bar.progress(perc_completed + 1)
+
+st.success('Photo uploaded successfully!')
 
 # If an image is uploaded, show it along with the prompt input
 if uploaded_image is not None:
