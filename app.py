@@ -28,7 +28,8 @@ st.markdown("<h3 style='text-align: center; color: #FF5722;'>🚀 AI-Powered Ima
 
 # File uploader widget to allow the user to upload an image (jpg, jpeg, png)
 st.markdown("<p style='text-align: center; color: #42a5f5;'>Upload an image to start the magic 🎨</p>", unsafe_allow_html=True)
-uploaded_image = st.file_uploader("", type=["jpg", "jpeg", "png"])
+uploaded_image = st.file_uploader("Upload your image", type=["jpg", "jpeg", "png"], label_visibility="collapsed")
+
 # uploaded_image = st.camera_input("")
 # uploaded_image = st.file_uploader("", type=["jpg", "jpeg", "png"]) or st.camera_input("")
 
