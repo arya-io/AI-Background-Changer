@@ -10,7 +10,7 @@ from io import BytesIO # BytesIO: Allows handling file data in memory (used to p
 import requests
 
 st.set_page_config(
-    page_title = 'AI Background Changer'
+    page_title = 'AI Background Changer',
     page_icon = '⚡',
 )
 
