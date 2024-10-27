@@ -42,7 +42,7 @@ if uploaded_image is not None:
     
     # Prompt the user to enter a text description for changing the image background
     st.markdown("<p style='text-align: center;'>💡 <i>Describe the background you'd like!</i> 🎨</p>", unsafe_allow_html=True)
-    prompt = st.text_input("", placeholder="E.g., 'futuristic city at night'")
+    prompt = st.text_input("Enter background description", placeholder="E.g., 'futuristic city at night'", label_visibility="collapsed")
 
     # Add a button that acts like a submit/enter button
     submit = st.button("Submit")
