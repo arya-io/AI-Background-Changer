@@ -20,12 +20,6 @@ cloudinary.config(
     api_key = st.secrets["API_KEY"], 
     api_secret = st.secrets["API_SECRET"], 
     secure=True  # Ensures that the connection to Cloudinary is secure (https)
-)
-
-if st.button("Clear session"):
-    for key in st.session_state.keys():
-        del st.session_state[key]
-
 
 # Title of the Streamlit app
 st.markdown("<h1 style='text-align: center; color: #4CAF50;'>🔮 Background Changer with AI 🧠</h1>", unsafe_allow_html=True)
